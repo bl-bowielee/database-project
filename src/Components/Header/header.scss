@@ -1,0 +1,39 @@
+
+.header {
+    background-color: plum;
+    padding: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  .logo {
+    height: 50px; 
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  ul { //unordered list
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  ul li { //all list items
+    margin-right: 20px;
+  }
+  
+  ul li a { 
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  
+  ul li a:hover {
+    color: #A020F0; 
+  }
+  

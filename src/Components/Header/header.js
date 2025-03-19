@@ -1,14 +1,20 @@
-function MyButton() {
-    return (
-        <button> I'm a button</button>
-    )
+import flower from "../../Assets/images/aster.png";
+import "./header.scss"
+
+const Header = () => {
+  return (
+      <header className="header">
+          <img src={flower} alt="aster" className="logo" />
+          <nav>
+              <ul>
+                  <li><a href="/">Home</a></li>
+                  <li><a href="/about">About</a></li>
+                  <li><a href="/services">Human Resources</a></li>
+                  <li><a href="/contact">Cart</a></li>
+              </ul>
+          </nav>
+      </header>
+  );
 }
 
-export default function MyApp() {
-    return (
-        <div>
-            <h1> Welcome to my app</h1>
-            <MyButton />
-        </div>
-    );
-}
+export default Header;

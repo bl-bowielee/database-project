@@ -1,26 +1,14 @@
-import React from "react";
-import Header from "./Components/Header" // Import your Header component
-import "./App.css";
+import "./App.scss"
+import Header from "./Components/Header/header.js"
 
-function App() {
+export default function MyApp() {
   return (
-    <div className="App">
-      <Header /> {/* Use the Header component here */}
-      <main className="App-main">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </main>
+    <div>
+      <Header />
+      <h1>Welcome to my app</h1>
+      <h1>Part 2</h1>
+      <p>Hello there.<br />How do you do?</p>
     </div>
   );
 }
 
-export default App;
